@@ -37,3 +37,32 @@ img {
 .gravatar {
   border-radius: 100%;
 }
+
+.gravator_btn{
+  width: 7%;
+  overflow: hidden;
+  background-color: #7ed2d2;
+  border-radius: 5px;
+  text-align: center;
+}
+.gravator_btn img{
+  margin-right: 5px;
+  border-radius: 50%;
+  margin-bottom: -3px;
+}
+.gravator_btn a{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.gravator_btn:hover{
+  background-color: #008484;
+  transition: all 1.0s;
+  box-shadow:4px 4px 3px 0px #bababa;
+  -moz-box-shadow:4px 4px 3px 0px #bababa;
+  -webkit-box-shadow:4px 4px 3px 0px #bababa;
+}
