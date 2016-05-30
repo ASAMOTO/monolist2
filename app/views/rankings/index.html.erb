@@ -1,0 +1,11 @@
+<div class="cover">
+  <div class="cover-inner">
+    <div class="cover-contents">
+      <h1>HaveとWantの人気ランキング</h1>
+      <%= link_to 'Haveを見る' , have_rankings_path, class: "btn btn-success btn-lg" %>
+      <%= link_to 'Wantを見る' , want_rankings_path, class: "btn btn-success btn-lg" %>
+    </div>
+  </div>
+</div>
+
+<%= render 'items/list' , items: @items %>

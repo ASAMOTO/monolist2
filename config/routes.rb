@@ -6,8 +6,13 @@ Rails.application.routes.draw do
   get    'login' , to: 'sessions#new'
   post   'login' , to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
-
+  
   resources :users
+  resources :rankings do
+    collection do
+      get :have , :want
+    end
+  end
   resources :sessions, only: [:new, :create, :destroy]
   resources :relationships, only: [:create, :destroy]
   resources :ownerships, only: [:create, :destroy]
